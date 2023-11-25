@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookStoreApplication.BookStore">
+   <children>
+      <GridPane alignment="CENTER" layoutY="3.0" prefHeight="403.0" prefWidth="606.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.0" minWidth="10.0" prefWidth="31.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="210.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="211.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="151.0" minWidth="10.0" prefWidth="151.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="126.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="108.0" minHeight="0.0" prefHeight="51.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="96.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="201.0" minHeight="10.0" prefHeight="176.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="button_login" alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="5.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="18.0" prefWidth="63.0" rotate="1.0" text="Login" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Label fx:id="dl_login_screen" alignment="TOP_RIGHT" prefHeight="97.0" prefWidth="122.0" textAlignment="CENTER" GridPane.columnIndex="3" />
+            <Label contentDisplay="RIGHT" prefHeight="39.0" prefWidth="135.0" text="Username:" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="18" />
+               </font>
+            </Label>
+            <Label prefHeight="32.0" prefWidth="134.0" text="Password:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial" size="18" />
+               </font>
+            </Label>
+            <TextField fx:id="username_textfield" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin></TextField>
+            <PasswordField fx:id="password_textfield" accessibleRole="PASSWORD_FIELD" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="5.0" />
+               </GridPane.margin>
+            </PasswordField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BookStore Application" wrappingWidth="287.646484375" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1ST ITERATION: PLEASE SEE README.TXT" wrappingWidth="431.109375" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="title_message" opacity="0.0" prefHeight="176.0" prefWidth="125.0" text="Label" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <Text fx:id="total_cost" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
